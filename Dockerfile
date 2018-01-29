@@ -4,7 +4,9 @@ MAINTAINER fehguy
 
 ENV VERSION "v2.2.10"
 ENV FOLDER "swagger-ui-2.2.10"
-ENV API_URL "http://petstore.swagger.io/v2/swagger.json"
+ENV AUTH_TOKEN ""
+ARG API_URL
+ENV API_URL $API_URL
 ENV API_URLS ""
 ENV API_KEY "**None**"
 ENV OAUTH_CLIENT_ID "**None**"
